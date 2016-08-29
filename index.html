@@ -51,7 +51,7 @@
         <div class="caption center-align">
           <h1>DEPARTAMENTOS</h1>
           <h2 class="light grey-text text-lighten-3">AL SUR DE LA CIUDAD DE MÉXICO</h2>
-          <button href="#modal1" class="blueS modal-trigger">VER VIDEO</button>
+          <button href="#modal1" class="blueS modal-trigger" onclick="play();">VER VIDEO</button>
         </div>
       </li>
       <li>
@@ -59,7 +59,7 @@
         <div class="caption center-align">
           <h1>DEPARTAMENTOS</h1>
           <h2 class="light grey-text text-lighten-3">AL SUR DE LA CIUDAD DE MÉXICO</h2>
-          <button data-target="modal1"  class="blueS modal-trigger">VER VIDEO</button>
+          <button data-target="modal1"  class="blueS modal-trigger" onclick="play();">VER VIDEO</button>
         </div>
       </li>
        <!-- <li>
@@ -339,16 +339,16 @@
   	<div class="title">
   		<h4> <strong>CONTACTO</strong></h4>
   	</div>
-  	<form action="">
+  	<form action="" id="form-contact">
   		<article>
-  			<input type="text" placeholder="NOMBRE *" required>
-  			<input type="email" placeholder="CORREO ELECTRÓNICO *" required>
-  			 <input type="tel" placeholder="TELÉFONO *" name="usrtel" required>
+  			<input type="text" placeholder="NOMBRE *" required name="name">
+  			<input type="email" placeholder="CORREO ELECTRÓNICO *" required name="email">
+  			<input type="tel" placeholder="TELÉFONO *" required name="phone">
   		</article>
   		<article>
-  			<textarea name="menjase" id="mansaje" cols="30" rows="10" placeholder="INGRESA TU MENSAJE"></textarea>
+  			<textarea  id="mansaje" cols="30" rows="10" placeholder="INGRESA TU MENSAJE" name="message"></textarea>
   		</article>
-  		<input type="send" placeholder="ENVIAR">
+  		<input type="submit" value="ENVIAR">
   	</form>
   	<p>Sus datos están protegidos bajo la ley de privacidad y no serán compartidos con terceros, revise nuestro <br>
      <a href="aviso.html">Aviso de Privacidad.</a></p>	
@@ -363,7 +363,7 @@
    <!-- Modal Trigger -->
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
-    <video width="100%" height="100%" controls>
+    <video width="100%" height="100%" controls id="video-parque-sur">
   <source src="assets/video.mp4" type="video/mp4">
   <source src="movie.ogg" type="video/ogg">
       Your browser does not support the video tag.
@@ -398,4 +398,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="assets/js/materialize.js"></script>
 <script src="assets/js/main.js"></script>
+<script type="text/javascript">
+    
+</script>
 </html>
