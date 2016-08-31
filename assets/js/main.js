@@ -44,6 +44,7 @@ function stop(){
 //Formulario de contacto
 $('form#form-contact').on('submit', function(event) {
   event.preventDefault();
+  $('#btn-submit').val('ESPERE ...');
   var data_form = $(this).serialize();
   $.ajax({
     url: 'phpmailer/send.php',
@@ -52,9 +53,14 @@ $('form#form-contact').on('submit', function(event) {
     data: $(this).serialize(),
   })
   .always(function(response) {
-    alert(response.message);
+    
     if(response.statusText = true){
-      window.location = 'index.html';
+      $('#btn-submit').hide();
+      $('.textMsj').show('slow');
+      document.getElementById("form-contact").reset();
+    }else{
+      alert(response.message);
+      $('#btn-submit').val('ESPERE ...');
     }
   });
 });
