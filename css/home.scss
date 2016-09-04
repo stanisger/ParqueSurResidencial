@@ -1,4 +1,4 @@
-nav{
+	nav{
 	height: 70px;
 	background: white;
 	position: fixed;
@@ -371,6 +371,9 @@ section#main{
 	  		right: 0;
 	  		width: 60px;
 	  		cursor: pointer;
+	  		@media (min-width: 993px){
+	  			width: 100px;
+	  		}
 	  	}
 	  	@media (min-width: 768px){
 	  		width: 50%;
@@ -382,7 +385,13 @@ section#main{
 	  	padding:  36px 36px 24px;
 	  	@media (min-width: 410px){
 	  			padding: 36px 54px;
-	  	}
+	  	} 
+	  		@media (min-width: 992px){
+	  			padding: 7% 11% 7% 7%;
+	  		}
+	  		@media (min-width: 992px){
+	  			padding: 9%;
+	  		}
 	  	h4{
 	  		font-weight: 300;
 	  		font-size: 14px;
@@ -397,24 +406,41 @@ section#main{
 	  		@media (min-width: 768px){
 	  			 text-align: left;
 	  		}
+	  		@media (min-width: 992px){
+	  			font-size: 19px;
+	  			line-height: 27px;
+	  			margin-bottom: 36px;
+	  		}
 	  	}
 	  	ul{
 	  		max-width: 410px;
 	  		margin: 18px auto;
 	  		li{
 	  			margin-bottom: 9px;
+	  			@media (min-width: 992px){
+	  				margin-bottom: 18px;
+	  			}
 	  			@include flexFlow;
 	  				font-weight: 300;
 	  			i{
 	  				
 	  				font-size: 	22px;
 	  				width: 11%;
+	  				@media (min-width: 992px){
+	  					font-size: 32px;
+	  				}
 
 	  			}
 	  			p{
 	  				width: 89%;
 	  				line-height: 16px;
 	  				margin-top: 6px;
+	  				font-weight: 300;
+	  				@media (min-width: 992px){
+	  					font-size: 19px;
+	  					line-height: 22px;
+	  					font-weight: 100;
+	  				}
 	  			}
 	  		}
 	  	}
@@ -422,6 +448,9 @@ section#main{
 	  		width: 50%;
 	  	}
 		  @media (min-width: 993px){
+		  	ul{
+		  		max-width: 100%;
+		  	}
 		  	
 		  }
 		  @media (min-width: 1440px){
@@ -437,23 +466,54 @@ section#mainor{
 	padding:  0 24px;
 	.content{
 		background: $blue;
-		@include content;
+		@include contentSmall;
 		padding: 36px 24px 24px;
 		@include flexFlow;
+		@media (min-width: 768px){
+			padding: 54px ;
+		}
+			@media (min-width: 993px){
+				padding: 54px 24px 94px;
+			}
+			 @media (min-width: 1440px){
+				padding: 94px 0 144px;
+			}
 		.title{
 			display: inline-block;
 			height: 61px;
 			width: 100%;
+			@media (min-width: 768px){
+				height: 91px;
+				margin-bottom: 24px;
+			}
+			@media (min-width: 993px){
+				height: 120px;
+			}
+			@media (min-width: 1440px){
+				height: 175px;
+			}
 		h2{
 			width: 137px;
 			font-size: 22px;
 			text-align: center;
 			font-weight: 300;
-			color: white;
+			color: rgba( white, .65);
+			transition: font-size .4s;
 			@include centerAbsolute2;
 			strong{
 				font-weight: 700;
-
+			}
+			@media (min-width: 768px){
+				font-size: 32px ;
+				width: 200px;
+			}
+			@media (min-width: 993px){
+				font-size: 46px;
+				width: 560px;
+			}
+			@media (min-width: 1440px){
+				font-size: 60px;
+				width: 730px;
 			}
 		}
 		h2:after{
@@ -463,18 +523,39 @@ section#mainor{
                 width: 90px;
                 background: rgba( 255, 255, 255, .4);
                 margin: 9px auto 24px;
+                @media (min-width: 768px){
+						margin: 9px auto 36px;
+                }
+                  @media (min-width: 1440px){
+                	height: 4px;
+                    width: 120px;
+                     margin: 18px auto ;
+
+                }
 
 
  			}
 	    }	
 	    ul:nth-child(2){
 	    	margin-top: 24px;
+	    	@media (min-width: 768px){
+	    		@include cero;
+	    	}
 	    }
 	    ul:nth-child(3){
 	    	margin-bottom: 24px;
+	    	@media (min-width: 768px){
+	    		@include cero;
+	    	}
 	    }
             ul{
             	@include cero;
+            	width: 100%;
+            	@media (min-width: 768px){
+                     width: 50%;
+
+            	}
+
             	color: white;
             	li{
             		@include flexFlow;
@@ -482,6 +563,10 @@ section#mainor{
             			width: 9%;
             			font-size: 22px;
             			color: $aqua;
+            			@media (min-width: 993px){
+            				font-size: 32px;
+            				width: 5%;
+            			}
             		}
             		p{
             			width: 89%;
@@ -489,6 +574,13 @@ section#mainor{
 					    font-size: 14px;
 					    line-height: 20px;
 					    margin-top: 7px;
+					    font-weight: 300;
+					    @media (min-width: 993px){
+					    	font-size: 19px;
+					    	margin-top: 18px;
+					    	width: 95%;
+					    	font-weight: 100;
+					    }
             		}
             	}
             }
@@ -496,13 +588,32 @@ section#mainor{
   }
   section#prototipe{
 	.content{
-		@include content;
+		@include contentLg;
 		@include flexFlow;
 		padding: 36px 24px 24px;
+		@media (min-width: 768px){
+			// padding: 54px ;
+		}
+			@media (min-width: 993px){
+				padding: 54px 24px 94px;
+			}
+			 @media (min-width: 1440px){
+				padding: 94px 0 144px;
+			}
+
 		.title{
 			display: inline-block;
 			height: 61px;
 			width: 100%;
+			@media (min-width: 768px){
+				height: 91px;
+			}
+			@media (min-width: 993px){
+				height: 120px;
+			}
+			@media (min-width: 1440px){
+				height: 175px;
+			}
 		h2{
 			width: 137px;
 			font-size: 22px;
@@ -513,6 +624,18 @@ section#mainor{
 				font-weight: 700;
 
 			}
+			@media (min-width: 768px){
+				font-size: 32px ;
+				width: 200px;
+			}
+			@media (min-width: 993px){
+				font-size: 46px;
+				width: 290px;
+			}
+			@media (min-width: 1440px){
+				font-size: 60px;
+				width: 390px;
+			}
 		}
 		h2:after{
  				content:"";
@@ -521,12 +644,25 @@ section#mainor{
                 width: 90px;
                 background: rgba( 0, 0, 0, .4);
                 margin: 9px auto ;
+                @media (min-width: 1440px){
+                	height: 4px;
+                    width: 120px;
+                     margin: 18px auto ;
 
+                }
 
  			}
+	  }	
+	  .fix{
+	  	padding: 0;
+	  	@media (min-width: 993px){
+           padding: 0 20%;
+	  	}
 	  }
 	  ul.tabs{
-	  	
+	  	@media (min-width: 993px){
+	  	  margin-bottom: 61px;
+	  	}
          li{
          	padding-top: 9px;
          	border-right: 1px solid rgba( black, .2);
@@ -537,6 +673,10 @@ section#mainor{
          			font-weight: 600;
          			color: $aqua;
          		}
+         		@media (min-width: 993px){
+         			font-size: 23px;
+
+         		}
          	}
          	a.active{
          		font-weight: 600;
@@ -546,10 +686,18 @@ section#mainor{
          li:nth-child(4){
 	  		border-right: 0;
 	  	}
+	  	
 	  }
 	  .contentTables{
+		  @include flexFlow;
 	  	 figure{
 		  	width: 100%;
+		  	@media (min-width: 768px){
+		  		width: 50%;
+		  	}
+			  	@media (min-width: 993px){
+						width: 45%;
+			  	}
 		  	position: relative;
 		  	@include cero;
 		  	height: auto;
@@ -562,9 +710,16 @@ section#mainor{
 		  	padding: 24px 18px;
 		  	@include flexFlow;
 		  	width: 100%;
+		  	@media (min-width: 768px){
+		  		width: 50%;
+		  	}
+		  	@media (min-width: 993px){
+						width: 55%;
+			  	}
 		  ul{
 		  	width: 100%;
 		  	@include cero;
+		  	@include flexFlow;
 		  	margin: 0 0;
 		  	h3{
 		  		color: $grayFont;
@@ -572,12 +727,13 @@ section#mainor{
 		  		text-transform: uppercase;
 		  		font-weight: 700;
 		  		margin-bottom: 18px;
+		  		 @media (min-width: 993px){
+		  		 	font-size: 20px;
+		  		 }
 		  	}
 		  	li{
+		  		width: 100%;
             		@include flexFlow;
-            		i{
-            			width: 9%;
-            		}
             		p{
             			width: 89%;
             			font-weight: 300;
@@ -585,6 +741,9 @@ section#mainor{
 					    line-height: 20px;
 					    margin-top: 7px;
 					    color: $grayFont;
+					    @media (min-width: 993px){
+					    	 font-size: 19px;
+					    }
             		}
             	}
 		    }
@@ -592,22 +751,48 @@ section#mainor{
         		li{
                     color: $aqua;
                     font-size: 22px;
+                    i{
+  						 width: 9%;
+  						 @media (min-width: 992px){
+							width: 4%;
+	                 }
+                    }
         		}
         	}
         	ul:nth-child(2){
-        		margin-top: 36px;
+        		margin-top: 72px;
         		margin-bottom: 18px;
+        		@include flexFlow;
+        		h3{
+        			width: 100%;
+        		}
         		li{
+        			width: 100%;
+        				@media (min-width: 900px){
+        					width: 50%;
+        					margin-bottom: 9px;
+        				}
+        				@media (min-width: 1440px){
+        					width: 33%;
+        					margin-bottom: 18px;
+        				}
         			i{
 	                 font-size: 20px;
 	                 margin-right: 10px;
 	                 color: $cafe;
+	                 width: 9%;
+	                 @media (min-width: 992px){
+							width: 7%;
+	                 }
 	                } 
 	        		p{
-	        			font-weight: 700;
+	        			font-weight: 400;
 	        			width: 85%;
 	        			font-size: 13px;
 	        			text-transform: uppercase;
+	        			@media (min-width: 993px){
+					    	 font-size: 16px;
+					    }
 	        		}
         		}
         	}

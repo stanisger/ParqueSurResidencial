@@ -382,6 +382,10 @@ button.aqua {
   transition: background .4s; }
   button.aqua:hover {
     background: #2b3042; }
+  @media (min-width: 993px) {
+    button.aqua {
+      font-size: 16px;
+      padding: 15px 42px; } }
 
 nav ul li.active {
   background-color: transparent; }
@@ -861,6 +865,9 @@ section#main .content {
       right: 0;
       width: 60px;
       cursor: pointer; }
+      @media (min-width: 993px) {
+        section#main .content figure img:nth-child(2) {
+          width: 100px; } }
     @media (min-width: 768px) {
       section#main .content figure {
         width: 50%; } }
@@ -871,6 +878,12 @@ section#main .content {
     @media (min-width: 410px) {
       section#main .content article {
         padding: 36px 54px; } }
+    @media (min-width: 992px) {
+      section#main .content article {
+        padding: 7% 11% 7% 7%; } }
+    @media (min-width: 992px) {
+      section#main .content article {
+        padding: 9%; } }
     section#main .content article h4 {
       font-weight: 300;
       font-size: 14px;
@@ -884,6 +897,11 @@ section#main .content {
       @media (min-width: 768px) {
         section#main .content article h4 {
           text-align: left; } }
+      @media (min-width: 992px) {
+        section#main .content article h4 {
+          font-size: 19px;
+          line-height: 27px;
+          margin-bottom: 36px; } }
     section#main .content article ul {
       max-width: 410px;
       margin: 18px auto; }
@@ -897,25 +915,40 @@ section#main .content {
         display: -ms-flexbox;
         display: flex;
         font-weight: 300; }
+        @media (min-width: 992px) {
+          section#main .content article ul li {
+            margin-bottom: 18px; } }
         section#main .content article ul li i {
           font-size: 22px;
           width: 11%; }
+          @media (min-width: 992px) {
+            section#main .content article ul li i {
+              font-size: 32px; } }
         section#main .content article ul li p {
           width: 89%;
           line-height: 16px;
-          margin-top: 6px; }
+          margin-top: 6px;
+          font-weight: 300; }
+          @media (min-width: 992px) {
+            section#main .content article ul li p {
+              font-size: 19px;
+              line-height: 22px;
+              font-weight: 100; } }
     @media (min-width: 768px) {
       section#main .content article {
         width: 50%; } }
+    @media (min-width: 993px) {
+      section#main .content article ul {
+        max-width: 100%; } }
 
 section#mainor {
   background: #2b3042;
   padding: 0 24px; }
   section#mainor .content {
     background: #2b3042;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
     padding: 18px;
     width: 100%;
     padding: 36px 24px 24px;
@@ -934,22 +967,54 @@ section#mainor {
       section#mainor .content {
         padding-left: 0;
         padding-right: 0; } }
+    @media (min-width: 768px) {
+      section#mainor .content {
+        padding: 54px; } }
+    @media (min-width: 993px) {
+      section#mainor .content {
+        padding: 54px 24px 94px; } }
+    @media (min-width: 1440px) {
+      section#mainor .content {
+        padding: 94px 0 144px; } }
     section#mainor .content .title {
       display: inline-block;
       height: 61px;
       width: 100%; }
+      @media (min-width: 768px) {
+        section#mainor .content .title {
+          height: 91px;
+          margin-bottom: 24px; } }
+      @media (min-width: 993px) {
+        section#mainor .content .title {
+          height: 120px; } }
+      @media (min-width: 1440px) {
+        section#mainor .content .title {
+          height: 175px; } }
       section#mainor .content .title h2 {
         width: 137px;
         font-size: 22px;
         text-align: center;
         font-weight: 300;
-        color: white;
+        color: rgba(255, 255, 255, 0.65);
+        transition: font-size .4s;
         margin: 0 auto;
         position: absolute;
         left: 0;
         right: 0; }
         section#mainor .content .title h2 strong {
           font-weight: 700; }
+        @media (min-width: 768px) {
+          section#mainor .content .title h2 {
+            font-size: 32px;
+            width: 200px; } }
+        @media (min-width: 993px) {
+          section#mainor .content .title h2 {
+            font-size: 46px;
+            width: 560px; } }
+        @media (min-width: 1440px) {
+          section#mainor .content .title h2 {
+            font-size: 60px;
+            width: 730px; } }
       section#mainor .content .title h2:after {
         content: " ";
         display: block;
@@ -957,14 +1022,34 @@ section#mainor {
         width: 90px;
         background: rgba(255, 255, 255, 0.4);
         margin: 9px auto 24px; }
+        @media (min-width: 768px) {
+          section#mainor .content .title h2:after {
+            margin: 9px auto 36px; } }
+        @media (min-width: 1440px) {
+          section#mainor .content .title h2:after {
+            height: 4px;
+            width: 120px;
+            margin: 18px auto; } }
     section#mainor .content ul:nth-child(2) {
       margin-top: 24px; }
+      @media (min-width: 768px) {
+        section#mainor .content ul:nth-child(2) {
+          padding: 0;
+          margin: 0; } }
     section#mainor .content ul:nth-child(3) {
       margin-bottom: 24px; }
+      @media (min-width: 768px) {
+        section#mainor .content ul:nth-child(3) {
+          padding: 0;
+          margin: 0; } }
     section#mainor .content ul {
       padding: 0;
       margin: 0;
+      width: 100%;
       color: white; }
+      @media (min-width: 768px) {
+        section#mainor .content ul {
+          width: 50%; } }
       section#mainor .content ul li {
         -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -977,17 +1062,28 @@ section#mainor {
           width: 9%;
           font-size: 22px;
           color: #0a80a7; }
+          @media (min-width: 993px) {
+            section#mainor .content ul li i {
+              font-size: 32px;
+              width: 5%; } }
         section#mainor .content ul li p {
           width: 89%;
           font-weight: 300;
           font-size: 14px;
           line-height: 20px;
-          margin-top: 7px; }
+          margin-top: 7px;
+          font-weight: 300; }
+          @media (min-width: 993px) {
+            section#mainor .content ul li p {
+              font-size: 19px;
+              margin-top: 18px;
+              width: 95%;
+              font-weight: 100; } }
 
 section#prototipe .content {
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1440px;
   padding: 18px;
   width: 100%;
   -webkit-flex-flow: row wrap;
@@ -1000,16 +1096,31 @@ section#prototipe .content {
   padding: 36px 24px 24px; }
   @media (min-width: 768px) {
     section#prototipe .content {
-      padding-left: 36px;
-      padding-right: 36px; } }
+      padding-left: 0;
+      padding-right: 0; } }
   @media (min-width: 1440px) {
     section#prototipe .content {
       padding-left: 0;
       padding-right: 0; } }
+  @media (min-width: 993px) {
+    section#prototipe .content {
+      padding: 54px 24px 94px; } }
+  @media (min-width: 1440px) {
+    section#prototipe .content {
+      padding: 94px 0 144px; } }
   section#prototipe .content .title {
     display: inline-block;
     height: 61px;
     width: 100%; }
+    @media (min-width: 768px) {
+      section#prototipe .content .title {
+        height: 91px; } }
+    @media (min-width: 993px) {
+      section#prototipe .content .title {
+        height: 120px; } }
+    @media (min-width: 1440px) {
+      section#prototipe .content .title {
+        height: 175px; } }
     section#prototipe .content .title h2 {
       width: 137px;
       font-size: 22px;
@@ -1021,6 +1132,18 @@ section#prototipe .content {
       right: 0; }
       section#prototipe .content .title h2 strong {
         font-weight: 700; }
+      @media (min-width: 768px) {
+        section#prototipe .content .title h2 {
+          font-size: 32px;
+          width: 200px; } }
+      @media (min-width: 993px) {
+        section#prototipe .content .title h2 {
+          font-size: 46px;
+          width: 290px; } }
+      @media (min-width: 1440px) {
+        section#prototipe .content .title h2 {
+          font-size: 60px;
+          width: 390px; } }
     section#prototipe .content .title h2:after {
       content: "";
       display: block;
@@ -1028,6 +1151,19 @@ section#prototipe .content {
       width: 90px;
       background: rgba(0, 0, 0, 0.4);
       margin: 9px auto; }
+      @media (min-width: 1440px) {
+        section#prototipe .content .title h2:after {
+          height: 4px;
+          width: 120px;
+          margin: 18px auto; } }
+  section#prototipe .content .fix {
+    padding: 0; }
+    @media (min-width: 993px) {
+      section#prototipe .content .fix {
+        padding: 0 20%; } }
+  @media (min-width: 993px) {
+    section#prototipe .content ul.tabs {
+      margin-bottom: 61px; } }
   section#prototipe .content ul.tabs li {
     padding-top: 9px;
     border-right: 1px solid rgba(0, 0, 0, 0.2); }
@@ -1037,42 +1173,104 @@ section#prototipe .content {
       section#prototipe .content ul.tabs li a:hover {
         font-weight: 600;
         color: #0a80a7; }
+      @media (min-width: 993px) {
+        section#prototipe .content ul.tabs li a {
+          font-size: 23px; } }
     section#prototipe .content ul.tabs li a.active {
       font-weight: 600;
       color: #0a80a7; }
   section#prototipe .content ul.tabs li:nth-child(4) {
     border-right: 0; }
-  section#prototipe .content .contentTables figure {
-    width: 100%;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    margin-top: 24px; }
-    section#prototipe .content .contentTables figure img:nth-child(1) {
-      width: 100%; }
-  section#prototipe .content .contentTables article {
-    padding: 24px 18px;
+  section#prototipe .content .contentTables {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    width: 100%; }
-    section#prototipe .content .contentTables article ul {
+    display: flex; }
+    section#prototipe .content .contentTables figure {
       width: 100%;
+      position: relative;
       padding: 0;
       margin: 0;
-      margin: 0 0; }
-      section#prototipe .content .contentTables article ul h3 {
-        color: #7f7f7f;
-        font-size: 16px;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 18px; }
-      section#prototipe .content .contentTables article ul li {
+      height: auto;
+      margin-top: 24px; }
+      @media (min-width: 768px) {
+        section#prototipe .content .contentTables figure {
+          width: 50%; } }
+      @media (min-width: 993px) {
+        section#prototipe .content .contentTables figure {
+          width: 45%; } }
+      section#prototipe .content .contentTables figure img:nth-child(1) {
+        width: 100%; }
+    section#prototipe .content .contentTables article {
+      padding: 24px 18px;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      @media (min-width: 768px) {
+        section#prototipe .content .contentTables article {
+          width: 50%; } }
+      @media (min-width: 993px) {
+        section#prototipe .content .contentTables article {
+          width: 55%; } }
+      section#prototipe .content .contentTables article ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 0; }
+        section#prototipe .content .contentTables article ul h3 {
+          color: #7f7f7f;
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: 18px; }
+          @media (min-width: 993px) {
+            section#prototipe .content .contentTables article ul h3 {
+              font-size: 20px; } }
+        section#prototipe .content .contentTables article ul li {
+          width: 100%;
+          -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          section#prototipe .content .contentTables article ul li p {
+            width: 89%;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 7px;
+            color: #7f7f7f; }
+            @media (min-width: 993px) {
+              section#prototipe .content .contentTables article ul li p {
+                font-size: 19px; } }
+      section#prototipe .content .contentTables article ul:nth-child(1) li {
+        color: #0a80a7;
+        font-size: 22px; }
+        section#prototipe .content .contentTables article ul:nth-child(1) li i {
+          width: 9%; }
+          @media (min-width: 992px) {
+            section#prototipe .content .contentTables article ul:nth-child(1) li i {
+              width: 4%; } }
+      section#prototipe .content .contentTables article ul:nth-child(2) {
+        margin-top: 72px;
+        margin-bottom: 18px;
         -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
@@ -1080,32 +1278,36 @@ section#prototipe .content {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex; }
-        section#prototipe .content .contentTables article ul li i {
-          width: 9%; }
-        section#prototipe .content .contentTables article ul li p {
-          width: 89%;
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 20px;
-          margin-top: 7px;
-          color: #7f7f7f; }
-    section#prototipe .content .contentTables article ul:nth-child(1) li {
-      color: #0a80a7;
-      font-size: 22px; }
-    section#prototipe .content .contentTables article ul:nth-child(2) {
-      margin-top: 36px;
-      margin-bottom: 18px; }
-      section#prototipe .content .contentTables article ul:nth-child(2) li i {
-        font-size: 20px;
-        margin-right: 10px;
-        color: #69594e; }
-      section#prototipe .content .contentTables article ul:nth-child(2) li p {
-        font-weight: 700;
-        width: 85%;
-        font-size: 13px;
-        text-transform: uppercase; }
-    section#prototipe .content .contentTables article button {
-      margin-top: 24px; }
+        section#prototipe .content .contentTables article ul:nth-child(2) h3 {
+          width: 100%; }
+        section#prototipe .content .contentTables article ul:nth-child(2) li {
+          width: 100%; }
+          @media (min-width: 900px) {
+            section#prototipe .content .contentTables article ul:nth-child(2) li {
+              width: 50%;
+              margin-bottom: 9px; } }
+          @media (min-width: 1440px) {
+            section#prototipe .content .contentTables article ul:nth-child(2) li {
+              width: 33%;
+              margin-bottom: 18px; } }
+          section#prototipe .content .contentTables article ul:nth-child(2) li i {
+            font-size: 20px;
+            margin-right: 10px;
+            color: #69594e;
+            width: 9%; }
+            @media (min-width: 992px) {
+              section#prototipe .content .contentTables article ul:nth-child(2) li i {
+                width: 7%; } }
+          section#prototipe .content .contentTables article ul:nth-child(2) li p {
+            font-weight: 400;
+            width: 85%;
+            font-size: 13px;
+            text-transform: uppercase; }
+            @media (min-width: 993px) {
+              section#prototipe .content .contentTables article ul:nth-child(2) li p {
+                font-size: 16px; } }
+      section#prototipe .content .contentTables article button {
+        margin-top: 24px; }
 
 section#amenidades {
   -webkit-flex-flow: row wrap;

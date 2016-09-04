@@ -60,6 +60,44 @@
      padding-right: 0;
   }
 }
+@mixin contentSmall{
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px;
+  width: 100%;
+  @media (min-width: 768px){
+     padding-left: 36px;
+     padding-right: 36px;
+  }
+   @media (min-width: 992px){
+     //  padding-left: 90px;
+     // padding-right: 90px;
+   }
+  @media (min-width: 1440px){
+     padding-left: 0;
+     padding-right: 0;
+  }
+}
+@mixin contentLg{
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px;
+  width: 100%;
+  @media (min-width: 768px){
+     padding-left: 0;
+     padding-right: 0;
+  }
+   @media (min-width: 992px){
+     //  padding-left: 90px;
+     // padding-right: 90px;
+   }
+  @media (min-width: 1440px){
+     padding-left: 0;
+     padding-right: 0;
+  }
+}
 @mixin imgOver{
 
     display: block;
