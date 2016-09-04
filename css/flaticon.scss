@@ -1,0 +1,51 @@
+  /*
+    Flaticon icon font: Flaticon
+    Creation date: 24/05/2016 21:08
+    */
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("css/fonts/Flaticon.eot");
+  src: url("css/fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("css/fonts/Flaticon.woff") format("woff"),
+       url("css/fonts/Flaticon.ttf") format("truetype"),
+       url("css/fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("css/fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+
+       font-style: normal;
+}
+.flaticon-armchair:before { content: "\f100"; }
+.flaticon-contact:before { content: "\f101"; }
+.flaticon-facebook-logo:before { content: "\f102"; }
+.flaticon-fountain:before { content: "\f103"; }
+.flaticon-full-bed:before { content: "\f104"; }
+.flaticon-furniture:before { content: "\f105"; }
+.flaticon-greek-building-with-four-pillars:before { content: "\f106"; }
+.flaticon-hanger:before { content: "\f107"; }
+.flaticon-kitchen:before { content: "\f108"; }
+.flaticon-ladder:before { content: "\f109"; }
+.flaticon-menu:before { content: "\f10a"; }
+.flaticon-menu-button:before { content: "\f10b"; }
+.flaticon-menu-button-1:before { content: "\f10c"; }
+.flaticon-oven:before { content: "\f10d"; }
+.flaticon-phone-receiver:before { content: "\f10e"; }
+.flaticon-placeholder-tool:before { content: "\f10f"; }
+.flaticon-search:before { content: "\f110"; }
+.flaticon-technology:before { content: "\f111"; }
+.flaticon-technology-1:before { content: "\f112"; }
+.flaticon-toilet:before { content: "\f113"; }
+.flaticon-transport:before { content: "\f114"; }
+.flaticon-washing-machine:before { content: "\f115"; }
