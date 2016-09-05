@@ -1328,12 +1328,30 @@ section#amenidades {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    @media (min-width: 993px) {
+      section#amenidades article:nth-child(1) {
+        padding: 54px 36px;
+        width: 67%; } }
+    @media (min-width: 1440px) {
+      section#amenidades article:nth-child(1) {
+        padding: 90px 5%; } }
     section#amenidades article:nth-child(1) h2 {
       font-size: 22px;
-      color: white;
-      font-weight: 300; }
+      color: #e4e4e4;
+      font-weight: 300;
+      width: 100%; }
       section#amenidades article:nth-child(1) h2 strong {
         font-weight: 700; }
+      @media (min-width: 768px) {
+        section#amenidades article:nth-child(1) h2 {
+          font-size: 32px; } }
+      @media (min-width: 993px) {
+        section#amenidades article:nth-child(1) h2 {
+          font-size: 48px;
+          margin-bottom: 20px; } }
+      @media (min-width: 1440px) {
+        section#amenidades article:nth-child(1) h2 {
+          font-size: 52px; } }
     section#amenidades article:nth-child(1) h2:after {
       content: "";
       display: block;
@@ -1341,58 +1359,89 @@ section#amenidades {
       width: 90px;
       background: rgba(255, 255, 255, 0.4);
       margin: 9px 0 24px; }
-    section#amenidades article:nth-child(1) aside span {
-      color: white;
-      font-weight: 300; }
-      section#amenidades article:nth-child(1) aside span strong {
-        font-weight: 600; }
-    section#amenidades article:nth-child(1) aside ul {
-      padding: 0;
-      margin: 0;
-      margin: 18px 0; }
-      section#amenidades article:nth-child(1) aside ul li {
-        -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
-        section#amenidades article:nth-child(1) aside ul li i {
-          width: 9%;
-          color: #0a80a7;
-          font-size: 20px; }
-        section#amenidades article:nth-child(1) aside ul li p {
-          width: 89%;
-          color: #7f7f7f;
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 18px;
-          margin-top: 7px;
-          color: rgba(255, 255, 255, 0.89); }
+      @media (min-width: 1440px) {
+        section#amenidades article:nth-child(1) h2:after {
+          height: 4px; } }
+    section#amenidades article:nth-child(1) aside {
+      width: 100%; }
+      @media (min-width: 768px) {
+        section#amenidades article:nth-child(1) aside {
+          width: 50%;
+          padding-right: 5%; } }
+      section#amenidades article:nth-child(1) aside span {
+        color: white;
+        font-weight: 300; }
+        section#amenidades article:nth-child(1) aside span strong {
+          font-weight: 600; }
+        @media (min-width: 993px) {
+          section#amenidades article:nth-child(1) aside span {
+            font-size: 19px; } }
+      section#amenidades article:nth-child(1) aside ul {
+        padding: 0;
+        margin: 0;
+        margin: 18px 0; }
+        section#amenidades article:nth-child(1) aside ul li {
+          -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
+          section#amenidades article:nth-child(1) aside ul li i {
+            width: 9%;
+            color: #0a80a7;
+            font-size: 20px; }
+          section#amenidades article:nth-child(1) aside ul li p {
+            width: 89%;
+            color: #7f7f7f;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 7px;
+            color: rgba(255, 255, 255, 0.89); }
+            @media (min-width: 993px) {
+              section#amenidades article:nth-child(1) aside ul li p {
+                font-size: 19px;
+                line-height: 27px;
+                font-weight: 100; } }
     section#amenidades article:nth-child(1) .slider {
       margin: 18px 0;
-      height: 300px !important; }
+      height: 300px;
+      width: 100%; }
       section#amenidades article:nth-child(1) .slider .second {
-        height: 300px !important; }
+        height: 300px; }
+      @media (min-width: 768px) {
+        section#amenidades article:nth-child(1) .slider {
+          width: 50%; } }
+      @media (min-width: 993px) {
+        section#amenidades article:nth-child(1) .slider {
+          height: 360px; } }
   section#amenidades article:nth-child(2) {
     padding: 36px  36px 24px;
     width: 100%;
     background: #69594e;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     color: white; }
+    @media (min-width: 993px) {
+      section#amenidades article:nth-child(2) {
+        width: 33%;
+        padding: 90px 7%; } }
     section#amenidades article:nth-child(2) h2 {
       font-size: 22px;
       color: white;
       font-weight: 300; }
       section#amenidades article:nth-child(2) h2 strong {
         font-weight: 700; }
+      @media (min-width: 768px) {
+        section#amenidades article:nth-child(2) h2 {
+          font-size: 32px; } }
+      @media (min-width: 993px) {
+        section#amenidades article:nth-child(2) h2 {
+          font-size: 48px;
+          margin-bottom: 20px; } }
+      @media (min-width: 1440px) {
+        section#amenidades article:nth-child(2) h2 {
+          font-size: 52px; } }
     section#amenidades article:nth-child(2) h2:after {
       content: "";
       display: block;
@@ -1405,10 +1454,14 @@ section#amenidades {
       font-weight: 300; }
       section#amenidades article:nth-child(2) span strong {
         font-weight: 600; }
+      @media (min-width: 993px) {
+        section#amenidades article:nth-child(2) span {
+          font-size: 19px; } }
     section#amenidades article:nth-child(2) ul {
       padding: 0;
       margin: 0;
-      margin: 18px 0 24px; }
+      margin: 18px 0 24px;
+      max-width: 270px; }
       section#amenidades article:nth-child(2) ul li {
         -webkit-flex-flow: row wrap;
         -ms-flex-flow: row wrap;
@@ -1429,8 +1482,15 @@ section#amenidades {
           line-height: 18px;
           margin-top: 7px;
           color: rgba(255, 255, 255, 0.89); }
+          @media (min-width: 993px) {
+            section#amenidades article:nth-child(2) ul li p {
+              font-size: 19px;
+              font-weight: 100; } }
     section#amenidades article:nth-child(2) button {
       margin-bottom: 24px; }
+      @media (min-width: 993px) {
+        section#amenidades article:nth-child(2) button {
+          margin-top: 90px; } }
 
 section#ubication .content {
   -webkit-flex-flow: row wrap;
@@ -1442,11 +1502,30 @@ section#ubication .content {
   display: flex;
   padding: 36px  18px 0px;
   width: 100%;
-  background: white; }
+  background: white;
+  position: relative; }
+  @media (min-width: 768px) {
+    section#ubication .content {
+      padding: 54px 54px 0; } }
+  @media (min-width: 993px) {
+    section#ubication .content {
+      padding: 54px 24px 0; } }
+  @media (min-width: 1440px) {
+    section#ubication .content {
+      padding: 94px 0 0; } }
   section#ubication .content .title {
     display: inline-block;
     height: 61px;
     width: 100%; }
+    @media (min-width: 768px) {
+      section#ubication .content .title {
+        height: 91px; } }
+    @media (min-width: 993px) {
+      section#ubication .content .title {
+        height: 120px; } }
+    @media (min-width: 1440px) {
+      section#ubication .content .title {
+        height: 175px; } }
     section#ubication .content .title h2 {
       width: 137px;
       font-size: 22px;
@@ -1458,6 +1537,18 @@ section#ubication .content {
       right: 0; }
       section#ubication .content .title h2 strong {
         font-weight: 700; }
+      @media (min-width: 768px) {
+        section#ubication .content .title h2 {
+          font-size: 32px;
+          width: 200px; } }
+      @media (min-width: 993px) {
+        section#ubication .content .title h2 {
+          font-size: 46px;
+          width: 290px; } }
+      @media (min-width: 1440px) {
+        section#ubication .content .title h2 {
+          font-size: 60px;
+          width: 350px; } }
     section#ubication .content .title h2:after {
       content: "";
       display: block;
@@ -1465,12 +1556,23 @@ section#ubication .content {
       width: 90px;
       background: rgba(0, 0, 0, 0.4);
       margin: 9px auto; }
+      @media (min-width: 1440px) {
+        section#ubication .content .title h2:after {
+          height: 4px;
+          width: 140px;
+          margin: 18px auto; } }
   section#ubication .content p {
     font-size: 14px;
     line-height: 18px;
     color: #7f7f7f;
     font-weight: 400;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 993px) {
+      section#ubication .content p {
+        font-size: 19px;
+        line-height: 30px;
+        margin-bottom: 54px; } }
   section#ubication .content figure {
     padding: 0;
     margin: 0;
@@ -1482,95 +1584,172 @@ section#ubication .content {
     background-size: cover !important;
     margin: 36px 0;
     background: url(assets/images/parque-sur-residencial-mapa.jpg) center; }
+  section#ubication .content button {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 230px;
+    bottom: 36px; }
 
-section#contact .content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1440px;
-  padding: 18px;
-  width: 100%;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 36px  36px 24px;
-  background: #2b3042;
-  color: white; }
-  @media (min-width: 768px) {
-    section#contact .content {
-      padding-left: 36px;
-      padding-right: 36px; } }
-  @media (min-width: 1440px) {
-    section#contact .content {
-      padding-left: 0;
-      padding-right: 0; } }
-  section#contact .content .title {
-    display: inline-block;
-    height: 61px;
-    width: 100%; }
-    section#contact .content .title h4 {
-      width: 117px;
-      font-size: 22px;
-      color: white;
-      font-weight: 300;
-      margin: 0 auto;
-      position: absolute;
-      left: 0;
-      right: 0; }
-      section#contact .content .title h4 strong {
-        font-weight: 700; }
-    section#contact .content .title h4:after {
-      content: "";
-      display: block;
-      height: 2px;
-      width: 90px;
-      background: rgba(255, 255, 255, 0.4);
-      margin: 9px auto; }
-  section#contact .content form {
-    width: 100%; }
-    section#contact .content form article {
+section#contact {
+  background: #2b3042; }
+  section#contact .content {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    width: 100%;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    padding: 36px  36px 24px; }
+    @media (min-width: 768px) {
+      section#contact .content {
+        padding-left: 36px;
+        padding-right: 36px; } }
+    @media (min-width: 1440px) {
+      section#contact .content {
+        padding-left: 0;
+        padding-right: 0; } }
+    @media (min-width: 993px) {
+      section#contact .content {
+        padding: 54px 24px 94px; } }
+    @media (min-width: 1440px) {
+      section#contact .content {
+        padding: 94px 0 36px; } }
+    section#contact .content .title {
+      display: inline-block;
+      height: 61px;
       width: 100%; }
-      section#contact .content form article input[type=text], section#contact .content form article input[type=email], section#contact .content form article input[type=tel] {
-        background: white;
-        border: 1px solid #333;
+      @media (min-width: 768px) {
+        section#contact .content .title {
+          height: 91px;
+          margin-bottom: 24px; } }
+      @media (min-width: 993px) {
+        section#contact .content .title {
+          height: 120px; } }
+      @media (min-width: 1440px) {
+        section#contact .content .title {
+          height: 175px; } }
+      section#contact .content .title h4 {
+        width: 137px;
+        font-size: 22px;
+        text-align: center;
         font-weight: 300;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 7px 0 7px 18px;
-        width: 95%;
-        color: #333; }
-        section#contact .content form article input[type=text] :focus, section#contact .content form article input[type=email] :focus, section#contact .content form article input[type=tel] :focus {
-          border: 1px solid #2b3042 !important; }
-      section#contact .content form article textarea {
-        width: 100%;
-        height: 90px;
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 7px 0 7px 18px;
-        background: white;
-        border: 0; }
-    section#contact .content form input[type=send] {
+        color: white;
+        transition: font-size .4s;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0; }
+        section#contact .content .title h4 strong {
+          font-weight: 700; }
+        @media (min-width: 768px) {
+          section#contact .content .title h4 {
+            font-size: 32px;
+            width: 200px; } }
+        @media (min-width: 993px) {
+          section#contact .content .title h4 {
+            font-size: 46px;
+            width: 560px; } }
+        @media (min-width: 1440px) {
+          section#contact .content .title h4 {
+            font-size: 60px;
+            width: 730px; } }
+      section#contact .content .title h4:after {
+        content: " ";
+        display: block;
+        height: 2px;
+        width: 90px;
+        background: rgba(255, 255, 255, 0.4);
+        margin: 9px auto 24px; }
+        @media (min-width: 768px) {
+          section#contact .content .title h4:after {
+            margin: 9px auto 36px; } }
+        @media (min-width: 1440px) {
+          section#contact .content .title h4:after {
+            height: 4px;
+            width: 120px;
+            margin: 18px auto; } }
+    section#contact .content form {
       width: 100%;
-      background: #0a80a7;
-      border: 0;
-      height: 40px;
-      color: white;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      section#contact .content form article {
+        width: 100%; }
+        section#contact .content form article input[type=text], section#contact .content form article input[type=email], section#contact .content form article input[type=tel] {
+          background: white;
+          border: 1px solid #333;
+          font-weight: 300;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 7px 0 7px 18px;
+          width: 95%;
+          color: #333; }
+          section#contact .content form article input[type=text] :focus, section#contact .content form article input[type=email] :focus, section#contact .content form article input[type=tel] :focus {
+            border: 1px solid #2b3042 !important; }
+          @media (min-width: 993px) {
+            section#contact .content form article input[type=text], section#contact .content form article input[type=email], section#contact .content form article input[type=tel] {
+              height: 45px;
+              font-size: 16px; } }
+        section#contact .content form article textarea {
+          width: 100%;
+          height: 90px;
+          font-weight: 300;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 7px 0 7px 18px;
+          background: white;
+          border: 0; }
+          @media (min-width: 993px) {
+            section#contact .content form article textarea {
+              height: 212px;
+              font-size: 16px; } }
+        @media (min-width: 768px) {
+          section#contact .content form article {
+            width: 50%;
+            padding: 0 9px;
+            font-size: 16px; } }
+      section#contact .content form input[type=submit] {
+        width: 100%;
+        background: #0a80a7;
+        border: 0;
+        height: 40px;
+        color: white;
+        text-align: center;
+        margin-top: 9px;
+        transition: background .4s; }
+        section#contact .content form input[type=submit]:hover {
+          background: #69594e; }
+        @media (min-width: 993px) {
+          section#contact .content form input[type=submit] {
+            height: 70px;
+            font-size: 16px; } }
+    section#contact .content > p {
       text-align: center;
-      margin-top: 9px; }
-  section#contact .content > p {
-    text-align: center;
-    margin: 24px 0 9px;
-    font-weight: 300; }
-    section#contact .content > p a {
-      color: white;
-      font-weight: 500;
-      transition: color .4s; }
-      section#contact .content > p a:hover {
-        color: #0a80a7; }
+      margin: 24px 0 9px;
+      font-weight: 300;
+      width: 100%; }
+      section#contact .content > p a {
+        color: white;
+        font-weight: 500;
+        transition: color .4s; }
+        section#contact .content > p a:hover {
+          color: #0a80a7; }
+        @media (min-width: 993px) {
+          section#contact .content > p a {
+            font-size: 16px; } }
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -1578,7 +1757,6 @@ footer {
   footer .content {
     width: 100%;
     padding: 24px;
-    max-width: 840px;
     text-align: center;
     color: white;
     font-weight: 300;

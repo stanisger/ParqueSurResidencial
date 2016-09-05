@@ -810,30 +810,61 @@ section#amenidades{
 		width: 100%;
 		background: $blue;
 		@include flexFlow;
+		@media (min-width: 768px){}
+		@media (min-width: 993px){
+			padding: 54px 36px;
+			width: 67%;
+		}
+		@media (min-width: 1440px){
+			padding: 90px 5%;
+		}
 		h2{
 			font-size: 22px;
-			color: white;
+			color: #e4e4e4;
 			font-weight: 300;
+			width: 100%;
 			strong{
 				font-weight: 700;
 
 			}
+			@media (min-width: 768px){
+				font-size:32px;
+			}
+			@media (min-width: 993px){
+				font-size: 48px;
+				margin-bottom: 20px 
+			}
+			@media (min-width: 1440px){
+				font-size: 52px;
+			}
 		}
-		h2:after{
+	 	h2:after{
 			content:"";
 	        display: block;
 	        height: 2px;
 	        width: 90px;
 	        background: rgba( 255, 255, 255, .4);
 	        margin: 9px 0 24px ;
+	        @media (min-width: 1440px){
+	        	height: 4px;
+
+	        }
 			}
  			aside{
+ 				width: 100%;
+ 				@media (min-width: 768px){
+						width: 50%;
+						padding-right: 5%;
+ 				}
 				span{
 					color: white;
 					font-weight: 300;
 					
 					strong{
 						font-weight: 600;
+					}
+					@media (min-width: 993px){
+						font-size: 19px;
 					}
 				}
  				ul{
@@ -854,16 +885,28 @@ section#amenidades{
 							    line-height: 18px;
 							    margin-top: 7px;
 							    color: rgba(white, .89);
+							    @media (min-width: 993px){
+							    	font-size: 19px;
+							    	line-height: 27px;
+							    	font-weight: 100;
+							    }
 		            		}
 		            	}
  				}
  			}
            .slider{
            	margin: 18px 0;
-           	height: 300px !important;
+           	height: 300px ;
+           	width: 100%;
            	  .second{
-           	  	height: 300px !important;
+           	  	height: 300px ;
            	  }
+           	  @media (min-width: 768px){
+						width: 50%;
+ 				}
+ 			 @media (min-width: 993px){
+ 			 	height: 360px ;
+ 			 }	
            }
 
 	}
@@ -871,8 +914,12 @@ section#amenidades{
 		padding: 36px  36px 24px;
 		width: 100%;
 		background: $cafe;
-		@include flexFlow;
+		// @include flexFlow;
         color: white;
+        @media (min-width: 993px){
+			width: 33%;
+			padding: 90px 7%;
+		}
         h2{
 			font-size: 22px;
 			color: white;
@@ -880,7 +927,18 @@ section#amenidades{
 			strong{
 				font-weight: 700;
 
+				}
+	    	@media (min-width: 768px){
+		  		font-size:32px;
 			}
+			@media (min-width: 993px){
+				font-size: 48px;
+				margin-bottom: 20px 
+			}
+			@media (min-width: 1440px){
+				font-size: 52px;
+			}		
+
 		}
 		h2:after{
 			content:"";
@@ -897,10 +955,14 @@ section#amenidades{
 					strong{
 						font-weight: 600;
 					}
+					@media (min-width: 993px){
+							    	font-size: 19px;
+							    }
 				}
  				ul{
  					@include cero;
  					margin: 18px 0 24px;
+ 					max-width: 270px;
  					li{
 		            	@include flexFlow;
 		            		i{
@@ -916,12 +978,19 @@ section#amenidades{
 							    line-height: 18px;
 							    margin-top: 7px;
 							    color: rgba(white, .89);
+							    @media (min-width: 993px){
+							    	font-size: 19px;
+							    	font-weight: 100;
+							    }
 		            		}
 		            	}
  				}
 
           button{
           	margin-bottom: 24px;
+          	 @media (min-width: 993px){
+          	 	margin-top: 90px;
+          	 }
           }
 	}
 }
@@ -931,10 +1000,29 @@ section#ubication{
 		padding: 36px  18px 0px;
 		width: 100%;
 		background: white;
+		position: relative;
+		@media (min-width: 768px){
+			padding: 54px 54px 0;
+		}
+			@media (min-width: 993px){
+				padding: 54px 24px 0;
+			}
+			 @media (min-width: 1440px){
+				padding: 94px 0 0;
+			}
 		.title{
 			display: inline-block;
 			height: 61px;
 			width: 100%;
+			@media (min-width: 768px){
+				height: 91px;
+			}
+			@media (min-width: 993px){
+				height: 120px;
+			}
+			@media (min-width: 1440px){
+				height: 175px;
+			}
 		h2{
 			width: 137px;
 			font-size: 22px;
@@ -945,24 +1033,48 @@ section#ubication{
 				font-weight: 700;
 
 			}
+			@media (min-width: 768px){
+				font-size: 32px ;
+				width: 200px;
+			}
+			@media (min-width: 993px){
+				font-size: 46px;
+				width: 290px;
+			}
+			@media (min-width: 1440px){
+				font-size: 60px;
+				width: 350px;
+			}
 		}
-		h2:after{
+		  h2:after{
  				content:"";
                 display: block;
                 height: 2px;
                 width: 90px;
                 background: rgba( 0, 0, 0, .4);
                 margin: 9px auto ;
+                @media (min-width: 1440px){
+                	height: 4px;
+                    width: 140px;
+                    margin: 18px auto ;
 
+		           }
 
- 			}
-	   }	
+		 	    }
+			}	
  			p{
  				font-size: 14px;
  				line-height: 18px;
  				color: $grayFont;
 		        font-weight: 400;
 		        text-align: center;
+		        width: 100%;
+			@media (min-width: 993px){
+				font-size: 19px;
+				line-height: 30px;
+				 margin-bottom: 54px;
+			}
+
  			}
  			figure{
  				@include cero;
@@ -972,45 +1084,92 @@ section#ubication{
  				margin: 36px 0; 
  				background: url(assets/images/parque-sur-residencial-mapa.jpg) center;
  			}
+ 			button{
+ 				@include centerAbsolute2;
+                width: 230px;
+                bottom: 36px; 
+ 			}
 	}
 }
 
 section#contact{
+	background: $blue;
 	.content{
-		@include content;
+		@include contentSmall;
 		@include flexFlow;
-		padding: 36px  36px 24px;
-		background: $blue;
 		color:  white;
+		padding: 36px  36px 24px;
+		@media (min-width: 768px){
+			// padding: 54px ;
+		}
+			@media (min-width: 993px){
+				padding: 54px 24px 94px;
+			}
+			 @media (min-width: 1440px){
+				padding: 94px 0 36px;
+			}
 		.title{
 			display: inline-block;
 			height: 61px;
 			width: 100%;
+			@media (min-width: 768px){
+				height: 91px;
+				margin-bottom: 24px;
+			}
+			@media (min-width: 993px){
+				height: 120px;
+			}
+			@media (min-width: 1440px){
+				height: 175px;
+			}
 		h4{
-			width: 117px;
+			width: 137px;
 			font-size: 22px;
-			color: white;
+			text-align: center;
 			font-weight: 300;
+			color: rgba( white, 1);
+			transition: font-size .4s;
 			@include centerAbsolute2;
 			strong{
 				font-weight: 700;
-
+			}
+			@media (min-width: 768px){
+				font-size: 32px ;
+				width: 200px;
+			}
+			@media (min-width: 993px){
+				font-size: 46px;
+				width: 560px;
+			}
+			@media (min-width: 1440px){
+				font-size: 60px;
+				width: 730px;
 			}
 		}
 		h4:after{
- 				content:"";
+ 				content:" ";
                 display: block;
                 height: 2px;
                 width: 90px;
                 background: rgba( 255, 255, 255, .4);
-                margin: 9px auto ;
+                margin: 9px auto 24px;
+                @media (min-width: 768px){
+						margin: 9px auto 36px;
+                }
+                  @media (min-width: 1440px){
+                	height: 4px;
+                    width: 120px;
+                     margin: 18px auto ;
+
+                }
 
 
  			}
-	   }
+	    }
 
 	form{
 		width: 100%;
+		@include flexFlow;
 		article{
 			width: 100%;
              input[type=text], input[type=email], input[type=tel]{
@@ -1025,6 +1184,10 @@ section#contact{
              	:focus{
                     border: 1px solid $blue !important;
              	}
+             	@media (min-width: 993px){
+		             height: 45px;
+		             font-size: 16px;
+		         	}
              }
 
              textarea{
@@ -1036,9 +1199,19 @@ section#contact{
              	padding: 7px 0 7px 18px;	
              	background: white;
              	border: 0;
+             	@media (min-width: 993px){
+             		height: 212px;
+             		font-size: 16px;
+             	}
              }
+                @media (min-width: 768px){
+                	width: 50%;
+                	padding: 0 9px;
+                	font-size: 16px;
+
+                }
 		}
-         input[type=send]{
+         input[type=submit]{
          	width: 100%;
          	background:$aqua;
          	border: 0;
@@ -1046,12 +1219,22 @@ section#contact{
          	color: white;
          	text-align: center;
          	margin-top: 9px;
+         	transition: background .4s;
+         	&:hover{
+         		background: $cafe;
+
+         	}
+         	@media (min-width: 993px){
+             height: 70px;
+             font-size: 16px;
+         	}
          }
         } 
         >p{
         	text-align: center;
         	margin: 24px 0 9px;
-        	font-weight: 300;   
+        	font-weight: 300;  
+        	width: 100%; 
         	a{
         		color: white;
         		font-weight: 500;
@@ -1059,8 +1242,11 @@ section#contact{
         		&:hover{
         			color: $aqua;
         		}
+        			@media (min-width: 993px){
+        				font-size: 16px;
+        			}
 
-        		}   
+        	}   
           }
 	}
 }
@@ -1070,7 +1256,7 @@ footer{
 	.content{
 		width: 100%;
 		padding: 24px;
-		max-width: 840px;
+		// max-width: 840px;
 		text-align: center;
 		color: white;
 		font-weight: 300;
