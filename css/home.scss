@@ -288,7 +288,7 @@
 .sliderOne{
 	margin-top: 70px;;
 	>a{
-		position: absolute;
+		position: fixed;
 		background: $aqua;
 		left: -32px;
 		top: 40%;
@@ -1044,7 +1044,7 @@ section#amenidades{
 						width: 50%;
  				}
  			 @media (min-width: 993px){
- 			 	height: 420px ;
+ 			 	height: 444px ;
  			 	.second{
 	           	  	height: 360px ;
 	           	  }
@@ -1458,10 +1458,20 @@ footer{
 	max-height: 100%;
 }
 #modal2{
+	max-height: 100%;
 	.slideModal{
-		height: 560px;
+		height: 100%;
 		ul.slides{
-			height: 560px;
+			height: 300px;
+			@media (min-width: 768px){
+				height: 350px;
+			}
+			@media (min-width: 993px){
+				height: 420px;
+			}
+			@media (min-width: 993px){
+				height: 560px;
+			}
 		}
 		ul.indicators{
 			display: none;
@@ -1469,5 +1479,29 @@ footer{
 				display: inherit;
 			}
 		}
+	}
+}
+section.aviso{
+	.content{
+         max-width: 768px;
+         width: 100%;
+         margin: 130px auto 40px;
+         padding: 54px 36px;
+         color: $grayFont;
+         h3{
+         	text-align: center;
+         	margin-bottom: 54px;
+         	font-weight: 500;
+         	font-size: 22px;
+         }
+         p{
+         	font-size: 14px;
+         	font-weight: 300;
+         	text-align: justify;
+         	strong{
+         		margin-bottom: 4px;
+         		display: block;
+         	}
+         }
 	}
 }
