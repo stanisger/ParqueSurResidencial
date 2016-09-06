@@ -32,13 +32,14 @@ $(window).scroll(function() {
 //video HTML5
 function play() {
   var video = document.getElementById("video-parque-sur");
-  if (video.paused) {
-    video.currentTime = 0;
-    video.play();
-  } else {
-    video.pause();
-  }
+  video.currentTime = 0;
+  video.play();
 }  
+
+function stop(){
+  var video = document.getElementById("video-parque-sur");
+  video.pause();
+}
 
 //Formulario de contacto
 $('form#form-contact').on('submit', function(event) {
@@ -114,7 +115,7 @@ $(document).ready(function(){
     starting_top: '70%', // Starting top style attribute
     ending_top: '0', // Ending top style attribute
     complete: function(){
-      play();
+      stop();
     }
   });
 
