@@ -372,6 +372,8 @@ button.blueS {
     button.blueS {
       font-size: 16px;
       padding: 15px 42px; } }
+  button.blueS a {
+    color: white; }
 
 button.aqua {
   border: 0;
@@ -387,6 +389,8 @@ button.aqua {
     button.aqua {
       font-size: 16px;
       padding: 15px 42px; } }
+  button.aqua a {
+    color: white; }
 
 nav ul li.active {
   background-color: transparent; }
@@ -1291,6 +1295,11 @@ section#prototipe .content {
       @media (min-width: 993px) {
         section#prototipe .content .contentTables article {
           width: 55%; } }
+      section#prototipe .content .contentTables article span {
+        font-weight: 300;
+        font-size: 12px;
+        color: #7f7f7f;
+        width: 100%; }
       section#prototipe .content .contentTables article ul {
         width: 100%;
         padding: 0;
@@ -1601,7 +1610,8 @@ section#amenidades {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        margin-bottom: 9px; }
         section#amenidades article:nth-child(2) ul li i {
           width: 9%;
           color: #0a80a7;
@@ -1617,7 +1627,8 @@ section#amenidades {
           @media (min-width: 993px) {
             section#amenidades article:nth-child(2) ul li p {
               font-size: 19px;
-              font-weight: 100; } }
+              font-weight: 100;
+              line-height: 23px; } }
     section#amenidades article:nth-child(2) button {
       margin-bottom: 24px; }
       @media (min-width: 993px) {
@@ -1889,7 +1900,7 @@ section#contact {
       text-align: center;
       color: white;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       background: #69594e;
       padding: 8px; }
       section#contact .content .textMsj span {

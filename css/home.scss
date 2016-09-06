@@ -821,6 +821,12 @@ section#mainor{
 		  	@media (min-width: 993px){
 						width: 55%;
 			  	}
+			  	span{
+			  		font-weight: 300;
+			  		font-size: 12px;
+			  		color: $grayFont;
+			  		width: 100%;
+			  	}
 		  ul{
 		  	width: 100%;
 		  	@include cero;
@@ -1132,6 +1138,7 @@ section#amenidades{
  					max-width: 270px;
  					li{
 		            	@include flexFlow;
+		            	margin-bottom: 9px;
 		            		i{
 		            			width: 9%;
 		            			color: $aqua;
@@ -1148,6 +1155,7 @@ section#amenidades{
 							    @media (min-width: 993px){
 							    	font-size: 19px;
 							    	font-weight: 100;
+							    	line-height: 23px;
 							    }
 		            		}
 		            	}
