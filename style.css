@@ -1883,6 +1883,17 @@ section#contact {
         @media (min-width: 993px) {
           section#contact .content > p a {
             font-size: 16px; } }
+    section#contact .content .textMsj {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      background: #69594e;
+      padding: 8px; }
+      section#contact .content .textMsj span {
+        font-weight: 100; }
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
